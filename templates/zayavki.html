@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+{% for booking in object_list %}
+{{booking.nyanya}}
+{{booking.get_booking_status_display}}
+{{booking.data}}
+{{booking.cancel}}
+{% endfor %}
+{% endblock content %}
+
+
